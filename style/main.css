@@ -24,7 +24,7 @@ header .container {
 }
 
 .home-top {
-    background: linear-gradient(#00000055, #141414ef), url('/img/clube_da_luta.jpg');
+    background: linear-gradient(#00000055, #141414ef), url('https://www.themoviedb.org/t/p/original/vfEuh0ELDkHWu3UfJiEkWN8Z4tc.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
