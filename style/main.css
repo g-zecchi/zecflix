@@ -146,3 +146,8 @@ footer .container {
     font-size: small;
     background-color: #000;
 }
+
+.grid img {
+    height: 200px;
+    border-radius: 3px;
+}
