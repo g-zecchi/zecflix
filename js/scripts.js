@@ -14,7 +14,7 @@ function discover(page) {
         return {
             id: el.id,
             title: el.title,
-            img: `https://image.tmdb.org/t/p/original${el.backdrop_path}`
+            img: `https://image.tmdb.org/t/p/w500${el.backdrop_path}`
         }
     })
 
@@ -28,19 +28,22 @@ function gridDiscover(i) {
     let count = 0;
     imgList.forEach(element => {
 
-        grid.appendChild(listImg(imgList, count));
+        grid.appendChild(criaDIV(imgList, count));
         count++;
     })
     console.log(elements)
 
+    function criaDIV(obj, count) {
+        let div = document.createElement('div');
+        div.appendChild(listImg(obj, count));
+        return div;
+    }
+
     function listImg(obj, count) {
         let srcImg = document.createElement('img');
         srcImg.src = obj[count];
-        srcImg.innerHTML = srcImg.src;
         return srcImg;
     }
 }
-
-
 
 gridDiscover(1);

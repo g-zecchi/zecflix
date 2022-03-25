@@ -147,7 +147,27 @@ footer .container {
     background-color: #000;
 }
 
+.explorar {
+    margin-top: 15px;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
 .grid img {
-    height: 200px;
+    width: 100%;
     border-radius: 3px;
+}
+
+.hover_img {
+    margin: 30px;
+}
+
+span {
+    margin: 30px;
 }
