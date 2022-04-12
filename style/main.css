@@ -1,7 +1,12 @@
+/*variáveis de cor*/
+
 :root {
     --red: #e50914;
     --black: #141414;
 }
+
+
+/*retirando padrões do navegador*/
 
 * {
     margin: 0;
@@ -9,11 +14,17 @@
     box-sizing: border-box;
 }
 
+
+/*body*/
+
 body {
     background-color: var(--black);
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
 }
+
+
+/*header da home*/
 
 header .container {
     display: flex;
@@ -55,6 +66,9 @@ header nav a:hover {
     align-items: flex-start;
     padding-left: 40px;
 }
+
+
+/*botões do header*/
 
 .button a {
     text-decoration: none;
@@ -98,6 +112,9 @@ header nav a:hover {
     margin-left: 5px;
 }
 
+
+/*estilo do filme principal da home*/
+
 .filme-principal .titulo {
     margin-bottom: 30px;
     font-family: "Bebas Neue", "Arial Black";
@@ -112,6 +129,9 @@ header nav a:hover {
 .filme-principal .container {
     padding: 100px 0 50px 0;
 }
+
+
+/*carrossel de filmes*/
 
 .box-filme {
     border-radius: 3px;
@@ -140,13 +160,8 @@ header nav a:hover {
     height: 200px;
 }
 
-footer .container {
-    margin-top: 100px;
-    text-align: center;
-    font-weight: lighter;
-    font-size: small;
-    background-color: #000;
-}
+
+/*grade de filmes explorar*/
 
 .explorar {
     margin-top: 15px;
@@ -169,23 +184,29 @@ footer .container {
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     text-align: bottom;
 }
 
-.hover_img h4 {
-    margin-left: 5px;
-    margin-bottom: 0;
-}
 
+/*
 .grid .hover_img:hover {
-    position: absolute;
-    height: 300px;
+    transform: scale(1.5);
+}*/
+
+.hover_img h4 {
+    margin-top: -100px;
+    padding: 50px 0 0 10px;
+    height: 100px;
+    border-radius: 3px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, .8), transparent);
 }
 
+
+/*botões de navegação do explorar*/
+
 .btn_nav {
     text-align: center;
+    margin-top: 15px;
 }
 
 .btn_nav button {
@@ -202,4 +223,24 @@ footer .container {
 
 .btn_nav button:hover {
     background-color: rgba(109, 109, 110, 0.459);
+}
+
+
+/*footer*/
+
+footer .container {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: small;
+    background-color: #000;
+}
+
+.hover-card {
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100
 }
